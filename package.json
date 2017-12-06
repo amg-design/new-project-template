@@ -1,0 +1,35 @@
+{
+  "name": "new-project-template",
+  "version": "0.0.1",
+  "description": "Template para proyectos en npm",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass -o dist/css src/scss --output-style compressed --source-map-embed",
+    "watch:css": "onchange src/scss/*.scss -- npm run css",
+    "serve": "browser-sync start --server dist --files dist",
+    "dev": "parallelshell  \"npm run watch:css \"  \"npm run serve \"",
+    "lint:sass": "sass-lint src/**/*.scss -c -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flap-interactive/new-project-template.git"
+  },
+  "keywords": [
+    "npm",
+    "boilerplate",
+    "frontend"
+  ],
+  "author": "Andrés Matonti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flap-interactive/new-project-template/issues"
+  },
+  "homepage": "https://github.com/flap-interactive/new-project-template#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.2",
+    "sass-lint": "^1.12.1"
+  }
+}
