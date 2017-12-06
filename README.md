@@ -1,4 +1,4 @@
-# [![Flap Interactive](http://www.flap.com.uy)]
+# [![New Project Template](http://www.flap.com.uy)]
 
 ## Overview
 
